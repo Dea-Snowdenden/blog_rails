@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+h1{
+font-size: 70px;
+text-align: center;
+text-shadow:3px 3px 5px #000000;
+font-color:  #0099ff;
+}
+
+h2{
+    text-align: center;
+}
+
+th  {
+	font-size: 20px;
+	text-align: center;	
+	font-color:  #00ffff;
+	}
+
+body{
+	background: url(https://cdn-image.realsimple.com/sites/default/files/styles/original/public/purple-tulips.jpg?itok=F3qs0gVe);
+	background-size: 100%;
+	}
+/*
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+*/
+  td {
+font-size: 20px;
+text-align: center;		
+	}
+
+
+table {
+    width: 100%;
+    background-color: #D8F0DA;
+    border: 1px;
+    min-width: 100%;
+    position: relative;
+    opacity: 0.97;
+    background: transparent;
+} 
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#" onclick="closeNav()">Home</a>
+    <a href="#about" onclick="closeNav()">Title</a>
+    <a href="#details" onclick="closeNav()">New Article</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<h1> Dea Lorenzo </h1>
+<%= link_to 'New article', new_article_path %>
+<div class="w3-container">
+<br>
+<br>
+<br>
+<br>
+
+<h2>Articles</h2>
+<div class="w3-responsive">
+<table class="w3-table-all">
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Destroy', article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="w3-center w3-dark-blue w3-padding-48 w3-large">
+    <img class = "link" src="http://www.holyapostles.edu/wp-content/uploads/Copyright_symbol.png" style="height: 50px"; width="50px";>
+    <p> Dea Lorenzo 2017 </p>
+    <p> making the world a better place, one code at a time... 007c0der</p>
+    <a href="https://www.linkedin.com/in/dea-lorenzo-4aa058a9/"> <img class = "link" src= "https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz.png" alt="linkedin"
+    style="height: 50px"; "width:50px";
+    ></a>
+    <a href="https://github.com/deazee101"> <img class = "link" src="github.png" alt="github" style="height: 50px"; "width:50px";> </a>
+</footer>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
